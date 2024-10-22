@@ -1,0 +1,789 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box ;}
+    .Front-Part
+    {
+        background:-webkit-repeating-linear-gradient(white , rgba(0, 0, 0, 0.39) , grey);
+       
+    
+    }
+    html
+    {
+        scroll-behavior:smooth;
+    }
+
+#main {
+  
+    width: 1400px;
+    height: 250px;
+    
+}
+
+.center {
+    position: absolute;
+    left: 16%;
+    top: 55%;
+    transform: translate(0, -50%);
+    width: 1000px;
+    height: 550px;
+}
+
+
+.image-container {
+    
+    
+    gap : 30%;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 35%;
+    height: 93%;
+    object-fit: cover;
+    float: right;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 4%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+#image-1 {
+ 
+    background: linear-gradient(45deg, black, rgba(58, 87, 58, 0.493), rgba(128, 128, 128, 0.388));
+}
+
+#image-2 {
+   
+    background: linear-gradient(55deg, black, rgb(86, 86, 86), black);
+}
+
+#image-3 {
+    
+    background: linear-gradient(45deg, black, purple, pink);
+}
+
+.text {
+    position: absolute;
+    bottom: 15%;
+    left: 14%;
+    z-index: 999;
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+    
+    
+}
+
+.text h1 {
+    position: absolute;
+    top: 120px;
+    font-size: 4vw;
+    color: white;
+    
+}
+
+.sidebar
+{
+    display : flex ; 
+    flex-direction: column;
+    gap : 7% ;
+    margin-top : 13%;
+    margin-left : 15%;
+    
+   
+}
+.thread
+{
+   width : 3px ; 
+   height : 80px ;
+   background-color: rgb(233, 225, 225);
+   margin-bottom: 6px;
+   border-radius : 10px;
+   border : 1px solid black ;
+}
+
+.navigation
+{
+    position: sticky;
+    display : flex ; 
+    flex-direction: row;
+    gap : 9%;
+    background-color: rgba(255 , 255 , 255 , 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ul
+{
+    margin-top: 9%;
+    display: inline-flex;
+    gap : 5%;
+    list-style: none;
+    cursor : pointer ;
+    
+}
+
+.list
+{
+    font-size: 1.3vw;
+    margin-left : 15%;
+}
+
+.image
+{
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 1.9vw;
+    font-weight: 800;
+
+}
+
+
+.slidder-wrapper
+{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+#items 
+{
+     width : 100%;
+     height: 200px;
+     margin-top: 1.5%;
+     margin-bottom : 2%;
+    transition: all 0.5s ease-out;
+    cursor : pointer;
+    border-radius : 10px;
+    
+   
+    
+}
+
+#top
+{
+    filter :grayscale(20%);
+    width : 100% ; 
+    height :100%;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 1.2/2;
+    
+}
+#items:hover
+{
+    transform: scale(1.3);
+    
+}
+
+.navigation
+{
+    display: flex;
+    flex-direction: row;
+    gap : 3%;
+    
+}
+.nav-icons
+{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    gap : 30%;
+    margin-left: 30%;
+}
+#menue
+{
+    margin-top: 1%;
+    margin-left:35%;
+    display : flex ; 
+    flex-direction: column;
+    gap : 10%;
+}
+.line
+{
+    width:16px;
+    height:3px;
+    background-color: black;
+    cursor : pointer;
+}
+#cart , #search ,#profile
+{
+    width : 27px ; 
+    height : 27px;
+    margin-right: 10px;
+    cursor : pointer;
+
+}
+#person-details
+{
+    position: absolute;
+    width : 220px ; 
+    height : auto ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   background-color: rgba(255, 255, 255, 0.358);
+   margin-left: 35%;
+   z-index: 999;
+   cursor: pointer;
+   align-items: center;
+   backdrop-filter: blur(10px);
+   visibility: hidden;
+   
+   
+}
+#person-details a
+{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    
+}
+#person-details h4
+{
+    padding-bottom: 5%;
+}
+#person-details h4:hover
+{
+    transition: all 2s ease-in ;
+    border-bottom: 1px solid rgba(10, 5, 5, 0.7);
+
+}
+
+#search-container
+{
+    position: absolute;
+    z-index: 999;
+    width : 45%;
+    height : 45%;
+    margin-left: 35%;
+    background-color: rgba(255, 255, 255, 0.422);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+}
+#search-container h5
+{
+    font-weight: 400;
+    margin-left: 1%;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+input[type="text"]
+{
+    width : 75%;
+    padding : 1%;
+    margin-left: 1%;
+    font-size: 15px;
+    margin-top: 0px;
+    border-left : none ; 
+    border-right: none;
+    border-top : none;
+    text-indent: 10px;
+    background-color: rgba(255, 255, 255, 0.422);
+    backdrop-filter: blur(13px);
+}
+input[type="text"]:focus
+{
+    outline: none;
+
+}
+#Cancel
+{
+    width : 15%;
+    border : none ;
+   margin-top: 1%;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    cursor : pointer;
+}
+.search-box
+{
+    display : flex ; 
+    flex-direction: row;
+    gap : 20px;
+    
+}
+.container1
+{
+    margin-left: 7%;
+    width : 30%;
+    
+}
+.container1 h5 , .container2 h5{
+    font-weight: 600;
+    margin-bottom: 5%;
+    
+}
+.container1 img
+{
+    width : 18px ; 
+    height : 18px;
+}
+#searchBox 
+{
+    margin-top : 2%;
+ 
+}
+#searchBox a , .container2 a
+{
+    text-decoration: none;
+    font-size: 17px;
+    color : black ; 
+    font-weight: 400;
+}
+#searchBox a:hover , .container2 a:hover
+.container2
+{
+    transition: all 1s ease-in;
+    border-bottom: 1px solid black;
+}
+.container2 #searchBox
+{
+    margin-top : 3%;
+}
+.container2
+{
+    margin-top: 0.5%;
+    width : 30%;
+    margin-left: 7%;
+}
+
+#menueBox
+{
+    position: absolute;
+    z-index: 999;
+    width : 20%;
+    height : 55% ;
+    margin-left: 75%;
+    background-color: rgba(255, 255, 255, 0.429);
+    backdrop-filter: blur(10px);
+}
+#crossIcon
+{
+    margin-left : 85%;
+    margin-top: 3%;
+    cursor : pointer;
+}
+.itemMenue
+{
+    display: flex;
+    flex-direction: row;
+    gap:7%;
+    margin-left : 15%;
+    
+}
+
+.itemMenue a
+{
+    text-decoration: none;
+    color : black; 
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 20%;
+    
+}
+.itemMenue a:hover
+{
+    transition: all 1s ease-in;
+    border-bottom: 1px solid black;
+}
+#next
+{
+   
+    margin-top: 1%;
+    padding-bottom: 3%;
+    transition: all 1s ease-in-out;
+ 
+}
+#menueBox
+{
+    visibility: hidden;
+}
+
+.instagram
+{
+    width : 360px;
+    height : 620px;
+    background-color : black;
+    margin-bottom: 2%;
+    margin-left: 39%;
+    margin-top: 20%;
+    border-radius: 35px;
+    box-shadow: -45px 25px 25px 10px rgba(0,0,0.4);
+    transition: all 1s ease-in-out;
+    scale : (1.5 , 2);
+    /* transform: rotateX(20deg) rotateY(55deg) rotateZ(-24deg);
+    perspective: 500px; */
+    
+}
+.page
+{
+    
+    max-width : 310px; 
+    max-height : 580px;
+    background-color:white;
+    position: absolute;
+    z-index: 999;
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 15px;
+  
+    
+   
+    
+}
+
+#instaLogo
+{
+    width : 40px ; 
+    height : 40px ; 
+    border-radius: 50%;
+    border : 3px solid rgba(10, 5, 5, 0.7);
+   
+}
+.instagram-profile h3
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size : 15px;
+    color : black;
+}
+.instagram-profile a
+{
+    text-decoration: none;
+    font-size : 11px;
+   
+}
+.instagram-profile
+{
+    display : flex ; 
+    flex-direction: column;
+    margin-top : 5% ; 
+    margin-left : 3%;
+}
+.first_div
+{
+    display: flex;
+    flex-direction: row;
+    gap : 3%;
+}
+.instagram-followers
+{
+    display : flex ; 
+    flex-direction: row;
+    gap : 9%;
+    margin-top: 3%;
+    margin-left: 7%;
+}
+.instagram-followers h6
+{
+    font-size : 16px;
+    font-weight: 600;
+    color : black;
+    margin-bottom : 0px;
+    margin-left : 9%;
+ 
+}
+.instagram-followers p
+{
+    color : black ;
+    font-size: 13px;
+   
+    
+}
+.insta-buttons
+{
+    margin-top: 4%;
+    margin-left: 7%;
+}
+#insta-button
+{
+    width : 40%;
+    padding : 2%;
+    margin-right: 2%;
+    border : none;
+    font-size: 17x;
+}
+#insta-button:nth-child(1)
+{
+    background-color: rgb(62, 62, 195);
+    color : white;
+    cursor : pointer;
+}
+.insta-story {
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 5%;
+    margin-left: 4.3%;
+    width: 100%; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+}
+.insta-story img
+{
+    width : 40px;
+    height : 40px;
+  
+}
+.insta-story h6{
+    margin-top: 0px;
+    margin-left : 6%;
+}
+
+.insta-posts
+{
+    display: flex;
+    flex-direction: row;
+    gap : 4% ; 
+    flex-wrap: wrap;
+    margin-top: -39%;
+    margin-left: 3%;
+}
+.insta-posts img
+{
+    width : 90px ; 
+    height : 95px;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+.social-meadia
+{
+    display: flex;
+    flex-direction: row;
+    gap : 13%;
+    height : 110vh;
+}
+.Scroll-Text
+{
+    margin-top: 12%;
+    width : 40% ; 
+    min-height: 40vh;
+    
+ 
+
+}
+.two
+{
+    display : flex ; 
+    position : relative;
+    width : 100% ; 
+    height : 100vh;
+    overflow : hidden;
+   
+
+}
+
+.text-area
+{
+    position : absolute ;
+    font-size: 3.5vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    opacity : 0.1;
+    width : 100%;
+    left : 10%;
+    /* overflow: hidden; */
+    
+}
+.text-area-hover
+{
+    position : absolute ;
+    font-size: 3.5vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    height : 19%;
+    opacity : 1;
+    width : 0%;
+    left : 10%;
+    overflow: hidden;
+    /* transition: all 1s ease-in; */
+    
+    
+}
+.social-meadia
+{
+    
+    background:-webkit-linear-gradient(white , rgba(255, 192, 203, 0.852) , black) ;
+    
+}
+.three
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10%;
+    margin-left: 47%;
+    margin-top: 25%;
+    
+}
+.icon2  , .icon1 , .icon3
+{
+   width : 80px ; 
+   height : 80px ; 
+
+
+}
+.icon2 img  , .icon1 img, .icon3 img
+{
+    aspect-ratio: 3/2;
+    width : 50px ; 
+    height :50px;
+}
+
+.background-image 
+{
+  margin-left: 70%;
+  width : 25%;
+  height :20%;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+.customer-review
+{
+    height : 90vh;
+}
+.customer-review h4
+{
+    margin-bottom: 0px;
+    margin-left: 38%;
+    font-size: 1.3vw;
+}
+.Reviews
+{
+    position : absolute ; 
+    margin-top: -20%;
+    margin-left: 20%;
+    font-weight: 200;
+}
+.review p
+{
+    font-size : 20px;
+
+}
+#forward  , #backward
+{
+    position: absolute;
+    margin-top: -19.5%;
+    width : 40px ; 
+    height : 40px;
+    cursor: pointer;
+   
+}
+#forward
+{
+    margin-left: 65%;
+}
+#forward:hover
+{
+    filter: drop-shadow(3px 3px  5px  rgb(199, 67, 67));
+}
+#backward
+{
+    margin-left: 16%;
+}
+#backward:hover
+{
+    filter: drop-shadow(3px 3px  5px  rgb(199, 67, 67)); 
+}
+
+.circle
+{
+    position: absolute;
+    margin-left: 39%;
+    display: flex;
+    gap : 15%;
+    margin-top : -12%;
+}
+#shape1 , #shape2 , #shape3
+{
+    width : 18px ; 
+    height : 14px;
+    /* background-color: black; */
+    border-radius: 50%;
+    border : 1.9px solid black;
+}
+
+.newsletter
+{
+    display: flex;
+    flex-direction: column;
+    gap : 2%;
+    margin-left: 5%;
+}
+.newsletter img
+{
+    width : 30%;
+    height : 45%;
+}
+.newsletter p
+{
+    color : black;
+    font-size: 18px;
+    font-weight: 300;
+}
+.footer
+{
+    display : flex ; 
+    flex-direction: row;
+    gap : 9%;
+    height: 80vh;
+    
+}
+#getInTouch
+{
+    position: absolute;
+    width : 7% ; 
+    height : 7%;
+    margin-left: 19%;
+    margin-top: 11.4%;
+    border : none ;
+}
+.newsletter input[type="email"]
+{
+    margin-top: 8%;
+    width : 75%;
+    padding : 3.5%;
+    font-size : 15px;
+    border : none;
+}
+.Information h4 , .touch h4 , .Zenieth h4
+{
+    font-size: 20px;
+}
+.Information h5, .touch h5 , .Zenieth h5
+{
+   font-size: 17px;
+   font-weight: 300;
+   cursor: pointer;
+}
+.Information h5:hover, .touch h5:hover, .Zenieth h5:hover:hover
+{
+    font-weight: bold;
+}
+.footer-text
+{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 38%;
+}
+.footer-text h2
+{
+    font-size: 65px;
+}
+footer
+{
+    height  : 89vh ;
+    background: -webkit-repeating-linear-gradient(rgba(228, 228, 224, 0.792),rgb(73, 71, 71));
+}
+
+
+
